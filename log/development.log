@@ -1,0 +1,353 @@
+
+
+Started GET "/" for ::1 at 2015-11-05 17:29:55 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (17.5ms)
+Completed 200 OK in 146ms (Views: 144.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:30:27 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 500 Internal Server Error in 704ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `json' for #<YoutubeClient:0x007feb8ca750d8>):
+  app/controllers/tubes_controller.rb:5:in `index'
+
+
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (31.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (21.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (56.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (440.3ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (293.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (689.7ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:30:43 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 500 Internal Server Error in 342ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `data' for #<YoutubeClient:0x007feb8c572220>):
+  app/clients/youtube_client.rb:22:in `to_json'
+  app/controllers/tubes_controller.rb:5:in `index'
+
+
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (27.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.3ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (387.9ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.1ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (295.7ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.2ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (629.0ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:31:02 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 200 OK in 349ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:37:20 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 500 Internal Server Error in 899ms (ActiveRecord: 0.0ms)
+
+Errno::ECONNREFUSED (Connection refused - connect(2) for nil port 80):
+  app/clients/youtube_client.rb:19:in `fetch'
+  app/controllers/tubes_controller.rb:4:in `index'
+
+
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (37.7ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (28.1ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (24.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (388.7ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (350.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.9ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (690.6ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:37:26 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 500 Internal Server Error in 373ms (ActiveRecord: 0.0ms)
+
+Errno::ECONNREFUSED (Connection refused - connect(2) for nil port 80):
+  app/clients/youtube_client.rb:19:in `fetch'
+  app/controllers/tubes_controller.rb:4:in `index'
+
+
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (34.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (20.3ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (355.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.3ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (269.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.3ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (610.8ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:37:32 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 500 Internal Server Error in 337ms (ActiveRecord: 0.0ms)
+
+Errno::ECONNREFUSED (Connection refused - connect(2) for nil port 80):
+  app/clients/youtube_client.rb:19:in `fetch'
+  app/controllers/tubes_controller.rb:4:in `index'
+
+
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (36.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (29.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (336.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (288.2ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (654.6ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:37:37 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 200 OK in 377ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:38:50 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 500 Internal Server Error in 359ms (ActiveRecord: 0.0ms)
+
+Errno::ECONNREFUSED (Connection refused - connect(2) for nil port 80):
+  app/clients/youtube_client.rb:19:in `fetch'
+  app/controllers/tubes_controller.rb:4:in `index'
+
+
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (48.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (23.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (351.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.2ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (339.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.1ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (674.8ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:39:09 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 200 OK in 836ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:41:04 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 500 Internal Server Error in 1221ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `firt' for #<Array:0x007feb8c590108>):
+  app/clients/youtube_client.rb:32:in `to_json'
+  app/controllers/tubes_controller.rb:5:in `index'
+
+
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (31.9ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (334.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (5.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (2.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (314.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.9ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (643.8ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:43:05 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/romb/Buffer/__JOBWANTED__/StoryfulBundle/yt-api/app/clients/youtube_client.rb:32: unterminated string meets end of file
+/Users/romb/Buffer/__JOBWANTED__/StoryfulBundle/yt-api/app/clients/youtube_client.rb:32: syntax error, unexpected end-of-input, expecting '}'):
+  app/clients/youtube_client.rb:32: unterminated string meets end of file
+  app/clients/youtube_client.rb:32: syntax error, unexpected end-of-input, expecting '}'
+  app/controllers/tubes_controller.rb:3:in `index'
+
+
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (39.1ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (14.7ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.1ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (409.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.3ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (259.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (614.1ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:43:25 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 200 OK in 1145ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:45:05 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 500 Internal Server Error in 700ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of String into Integer):
+  app/clients/youtube_client.rb:33:in `[]'
+  app/clients/youtube_client.rb:33:in `to_json'
+  app/controllers/tubes_controller.rb:5:in `index'
+
+
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (43.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (21.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (396.7ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (276.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (587.5ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:46:04 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 500 Internal Server Error in 667ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of String into Integer):
+  app/clients/youtube_client.rb:35:in `[]'
+  app/clients/youtube_client.rb:35:in `to_json'
+  app/controllers/tubes_controller.rb:5:in `index'
+
+
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (30.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.2ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (308.1ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.9ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (254.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (629.6ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:46:27 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 500 Internal Server Error in 722ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of String into Integer):
+  app/clients/youtube_client.rb:35:in `[]'
+  app/clients/youtube_client.rb:35:in `to_json'
+  app/controllers/tubes_controller.rb:5:in `index'
+
+
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (32.2ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (22.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.9ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (385.8ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (2.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.9ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (245.3ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (542.5ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:47:03 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 200 OK in 1084ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:50:19 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 200 OK in 743ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:50:43 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 500 Internal Server Error in 690ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `channal_data' for #<YoutubeClient:0x007feb8c28ab98>):
+  app/clients/youtube_client.rb:36:in `channel_snippet'
+  app/clients/youtube_client.rb:42:in `to_json'
+  app/controllers/tubes_controller.rb:5:in `index'
+
+
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (33.2ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (98.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (446.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (24.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (315.6ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (2.0ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /Users/romb/.rvm/gems/ruby-2.2.2@global/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (657.3ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:51:18 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 200 OK in 1141ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:52:40 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 200 OK in 841ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tubes?url=www.youtube.com/watch?v=KBzmzdnZe14" for ::1 at 2015-11-05 17:53:41 +0200
+Processing by TubesController#index as HTML
+  Parameters: {"url"=>"www.youtube.com/watch?v=KBzmzdnZe14"}
+Completed 200 OK in 679ms (Views: 1.8ms | ActiveRecord: 0.0ms)

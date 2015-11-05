@@ -1,5 +1,7 @@
 class TubesController < ApplicationController
   def index
-    render json: {}
+    client = YoutubeClient.new(params[:url])
+    client.fetch
+    render json: client.to_json
   end
 end

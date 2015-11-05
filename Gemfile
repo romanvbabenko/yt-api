@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.4'
 gem 'sqlite3', '~> 1.3.10'
+gem 'httparty'
 
 group :development, :test do
   gem 'byebug'
