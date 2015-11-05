@@ -6,8 +6,11 @@ class YoutubeClient
     @url = url
   end
 
+  # https://www.youtube.com/embed/KBzmzdnZe14
+  # https://www.youtube.com/watch?v=KBzmzdnZe14
+  # https://youtu.be/KBzmzdnZe14
   def youtube_id
-    @youtube_id ||= url.split('=').last
+    @youtube_id = url =~ /=/ ? url.split('=').last : url.split('/').last
   end
 
   def youtube_url
