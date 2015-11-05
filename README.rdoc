@@ -1,0 +1,51 @@
+== README
+
+=== Info
+
+Youtube Video API url: https://www.googleapis.com/youtube/v3/videos?part=id,snippet,statistics&id=KBzmzdnZe14&key=AIzaSyCrYTzqULvWN9b9NInDdQMpf5t5hy9zRSo
+
+Youtube Channels API url: https://www.googleapis.com/youtube/v3/channels?part=snippet&id=UCAHrNGn3hLC9_MilY74RCmg&key=AIzaSyCrYTzqULvWN9b9NInDdQMpf5t5hy9zRSo
+
+Youtube Api Key: AIzaSyCrYTzqULvWN9b9NInDdQMpf5t5hy9zRSo
+
+=== The Goal
+
+The goal is to build a simple api that, given a youtube video id, gives back a json containing data from current video with the following structure:
+
+* provider: The plaform where the post was generated (Youtube, Twitter, etc)
+* id: The uniq identifier
+* title: The title of the post
+* description: Text content
+* source: Json dump of the obejct
+* published_at: Date when the post was published
+* thumbnail: Url to an image representing the post
+* canonical_url: The canonical url for the content
+* location
+  * latitude
+  * longitude
+* author
+  * id: The uniq identifier of the author
+  * name: The name of the owner of the post
+  * url: The url to the author homepage
+  * thumbnail: Url to image representing the author
+
+So, calling this urls:
+* /tubes?url=https://www.youtube.com/watch?v=KBzmzdnZe14
+* /tubes?url=https://youtu.be/KBzmzdnZe14
+* /tubes?url=https://www.youtube.com/embed/KBzmzdnZe14
+
+we should get back a json like this
+
+{"provider":"Youtube","id":"KBzmzdnZe14","canonical_url":"https://www.youtube.com/watch?v=KBzmzdnZe14","author":{"name":"Rachel Quinn","id":"UCAHrNGn3hLC9_MilY74RCmg","url":"https://www.youtube.com/channel/UCAHrNGn3hLC9_MilY74RCmg","thumbnail":"https://yt3.ggpht.com/-csMFdDxvD7I/AAAAAAAAAAI/AAAAAAAAAAA/Q-1CcsoKcsI/s240-c-k-no/photo.jpg"},"location":{"latitude":53.349811554,"longitude":-6.26031017303},"title":"Bull Island","description":"","source":{"publishedAt":"2015-09-22T07:59:32.000Z","channelId":"UCAHrNGn3hLC9_MilY74RCmg","title":"Bull Island","description":"","thumbnails":{"default":{"url":"https://i.ytimg.com/vi/KBzmzdnZe14/default.jpg","width":120,"height":90},"medium":{"url":"https://i.ytimg.com/vi/KBzmzdnZe14/mqdefault.jpg","width":320,"height":180},"high":{"url":"https://i.ytimg.com/vi/KBzmzdnZe14/hqdefault.jpg","width":480,"height":360}},"channelTitle":"Rachel Quinn","categoryId":"22","liveBroadcastContent":"none","localized":{"title":"Bull Island","description":""},"defaultAudioLanguage":"en"},"published_at":"2015-09-22T07:59:32.000Z","thumbnail":"https://i.ytimg.com/vi/KBzmzdnZe14/hqdefault.jpg"}
+
+=== What We Are Looking For
+
+* Demonstration of craftsmanship and attention to detail - write the code as though you were writing for a production system.
+* Use of language idiom and advanced language features, where appropriate.
+* An appreciation for design (clear separation of concerns, an understanding of abstraction, cohesion and coupling).
+* Use of Object Oriented programming, where appropriate.
+* Code that communicates intent (maintainable code).
+* An absence of duplication (maintainable code).
+* A correct solution.
+* A suite of tests or rspecs for the solution.
+* Reasonable use of Ruby Gems is permissible and encouraged, so long as no Gem provides the basis for the solution.
